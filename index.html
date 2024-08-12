@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Khalamma!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        h2 {
+            color: #ff1493;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        img {
+            border-radius: 15px;
+            margin-top: 20px;
+            width: 50%;
+            box-shadow: 0px 0px 20px #ff69b4;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .roses {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite;
+        }
+
+        .button:hover {
+            background-color: #ff1493;
+        }
+
+        .marquee {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4, 0 0 80px #ff69b4;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎉 Happy Birthday, Khalamma! 🎉</h1>
+    <h2>We wish you all the happiness in the world!</h2>
+
+    <div class="emoji">🌹🌹🌹🌹🌹🌹🌹</div>
+
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkJCQkKCQoLCwoODw0PDhUTERETFR8WGBYYFh8wHiMeHiMeMCozKScpMypMOzU1O0xX" alt="Israt's Picture">
+
+    <div class="roses">🌹🌹🌹🌹🌹🌹🌹</div>
+
+    <button class="button" onclick="displayMessage()">Click for a Surprise</button>
+
+    <marquee class="marquee" behavior="scroll" direction="left">🎂 Happy Birthday, Khalamma! 🎉 Wishing you joy, love, and all the good things in life! 🌹🌹🌹</marquee>
+
+    <script>
+        function displayMessage() {
+            alert('Happy Birthday, Khalamma! You are amazing! 🌹🌹🌹');
+        }
+    </script>
+</body>
+
+</html>
